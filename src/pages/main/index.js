@@ -1,5 +1,6 @@
 import React , {Component} from 'react'
 import  api from "../../services/api"
+import { Container, NomeVeiculo, ListaVeiculos, Titulo} from './styles';
 export default class Main extends Component{
   state = {
     veiculos: [],
@@ -15,15 +16,18 @@ export default class Main extends Component{
   }
   render(){
     return(
-      <div className="veiculos-list">
+      <Container>
+        <Titulo>VEÍCULO</Titulo>
+        <hr/>
+        <ListaVeiculos>Lista de veículos</ListaVeiculos>
         {this.state.veiculos.map(veiculos=>(
           <article key={veiculos.id}>
             <strong>{veiculos.marca}</strong>
-            <p>{veiculos.veiculo}</p>
+            <NomeVeiculo>{veiculos.veiculo}</NomeVeiculo>
             <p> {veiculos.ano} </p>
           </article>
         ))}
-      </div>
+      </Container>
     )
   }
 }

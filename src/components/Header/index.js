@@ -1,10 +1,16 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, Titulo,Imagem} from './styles';
+import Gota from "../../assets/gota.png"
+import Search from "../Search/index"
 
 const Header = () => {
   return (
-    <Container>FULLSTACK</Container>
+    <Container>
+      <Imagem src={Gota}/>
+      <Titulo>FULLSTACK</Titulo>
+      <Search/>
+    </Container>
   )
 }
 
