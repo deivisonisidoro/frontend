@@ -1,6 +1,5 @@
 Este projeto foi inicializado com [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
 No diretório do projeto, você pode executar:
 
