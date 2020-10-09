@@ -1,13 +1,15 @@
 import React from 'react';
 import Header from "./components/Header"
-import './styles.css'
-import Main from "./pages/main"
-
+import {GlobalStyle} from './styles.js'
+import Routes from "./routes"
 const App = () => {
   return (
     <div>
-     <Header/>
-     <Main/>
+      
+        <GlobalStyle/>
+        <Header/>
+        <Routes/>
+      
     </div>
   );  
 }
